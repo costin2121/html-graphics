@@ -30,7 +30,7 @@ function read3DModel(file_content) {
 }
 
 function load3DModels() {
-    fetch('http://localhost:3000/3dmodels', {
+    fetch('http://costin.lol/3dmodels', {
         method: "GET",
         mode: 'cors',
         headers: {
