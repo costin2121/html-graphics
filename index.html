@@ -1,0 +1,33 @@
+<body>
+    <input id="rot_x" type="range" min="0" max="360" value="0">
+    <input id="rot_y" type="range" min="0" max="360" value="0">
+    <input id="rot_z" type="range" min="0" max="360" value="0">
+    <select name="shape" id="shape">
+    </select>
+    <button id="import_obj">Import Custom 3D Model (.obj)</button>
+    <input type="file" id="filedialog" style="display: none;" accept=".obj">
+    <p>X Rotation: <span id="x_val">0</span>&#xb0;<br> Y Rotation: <span id="y_val">0</span>&#xb0;<br> Z Rotation: <span
+            id="z_val">0</span>&#xb0;</p>
+    <span>Auto rotate: </span>
+    <span>X: </span><input type="checkbox" id="autorot_x">
+    <span>Y: </span><input type="checkbox" id="autorot_y">
+    <span>Z: </span><input type="checkbox" id="autorot_z">
+    <span>Sync: </span><input type="checkbox" id="sync_rot" checked="true">
+    <br>
+    <span>Rotation Speed: </span> <input id="rot_speed" type="number" min="1" max="250" value="1">
+    <br>
+    <span>Show points: <input type="checkbox" id="show_points"></span>
+    <br><br>
+    <button id="reset">Reset Offset & Scale</button>
+    <button id="reset_canvas">Reset Canvas</button>
+    <br><br>
+    <canvas id="render"></canvas>
+    <script src="helpers/Vector.js"></script>
+    <script src="helpers/ReadModels.js"></script>
+    <script src="helpers/Trig.js"></script>
+    <script src="helpers/Drawing.js"></script>
+    <script src="helpers/Shapes.js"></script>
+    <script src="helpers/File.js"></script>
+    <script src="helpers/Controls.js"></script>
+    <script src="script.js"></script>
+</body>
